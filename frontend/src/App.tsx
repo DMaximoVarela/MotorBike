@@ -1,22 +1,27 @@
-import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import Home from "./pages/Home";
+import Services from "./pages/Services";
+import Store from "./pages/Store";
+import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
+import Nav from "./components/Nav";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Nav />
+
+      <h1>This is MotorBike...</h1>
+
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/inicio" element={<Home />} />
+        <Route path="servicios" element={<Services />} />
+        <Route path="tienda" element={<Store />} />
+        <Route path="galeria" element={<Gallery />} />
+        <Route path="contacto" element={<Contact />} />
+      </Routes>
     </>
   );
 }
