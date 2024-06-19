@@ -1,0 +1,102 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Usuario {
+  id               Int        @id @default(autoincrement())
+  nombre           String
+  correo_electronico String   @unique
+  contrasena       String
+  Compras          Compra[]
+  Resenas          Resena[]
+  CarritoCompras   CarritoCompra[]
+}
+
+model Producto {
+  id                Int         @id @default(autoincrement())
+  nombre            String
+  descripcion       String
+  precio            Float
+  cantidad_disponible Int
+  categoria_id      Int
+  categoria         Categoria   @relation(fields: [categoria_id], references: [id])
+  DetalleCompras    DetalleCompra[]
+  Resenas           Resena[]
+  CarritoCompras    CarritoCompra[]
+}
+
+model Categoria {
+  id        Int         @id @default(autoincrement())
+  nombre    String
+  Productos Producto[]
+}
+
+model Compra {
+  id         Int         @id @default(autoincrement())
+  usuario_id Int
+  fecha      DateTime
+  estado     String
+  usuario    Usuario     @relation(fields: [usuario_id], references: [id])
+  Detalles   DetalleCompra[]
+}
+
+model DetalleCompra {
+  id          Int       @id @default(autoincrement())
+  compra_id   Int
+  producto_id Int
+  cantidad    Int
+  precio_unitario Float
+  compra      Compra    @relation(fields: [compra_id], references: [id])
+  producto    Producto  @relation(fields: [producto_id], references: [id])
+}
+
+model Resena {
+  id          Int       @id @default(autoincrement())
+  producto_id Int
+  usuario_id  Int
+  puntuacion  Int
+  comentario  String
+  producto    Producto  @relation(fields: [producto_id], references: [id])
+  usuario     Usuario   @relation(fields: [usuario_id], references: [id])
+}
+
+model CarritoCompra {
+  id          Int       @id @default(autoincrement())
+  usuario_id  Int
+  producto_id Int
+  cantidad    Int
+  usuario     Usuario   @relation(fields: [usuario_id], references: [id])
+  producto    Producto  @relation(fields: [producto_id], references: [id])
+}
+
+model FAQ {
+  id          Int       @id @default(autoincrement())
+  pregunta    String
+  respuesta   String
+  categoria_id Int
+  categoria   CategoriaFAQ @relation(fields: [categoria_id], references: [id])
+}
+
+model CategoriaFAQ {
+  id       Int      @id @default(autoincrement())
+  nombre   String
+  FAQs     FAQ[]
+}
+
+model Servicio {
+  id          Int       @id @default(autoincrement())
+  nombre      String
+  descripcion String
+  precio      Float
+}
+
+model Galeria {
+  id          Int       @id @default(autoincrement())
+  descripcion String
+  archivo_url String
+}
