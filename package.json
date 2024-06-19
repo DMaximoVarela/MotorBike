@@ -1,0 +1,14 @@
+{
+  "name": "motorbike",
+  "version": "1.0.0",
+  "description": "MotorBike project combining frontend and backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd backend && npm run start:dev",
+    "start:frontend": "cd frontend && npm run dev"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
