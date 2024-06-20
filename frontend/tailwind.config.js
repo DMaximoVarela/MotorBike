@@ -3,6 +3,18 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {},
+    screens: {
+      xsm: "320px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+      "3xl": "1720px",
+      "4xl": "1980px",
+      "5xl": "2560px",
+    },
+
     colors: {
       "crimson-red": {
         50: "#DD6666",

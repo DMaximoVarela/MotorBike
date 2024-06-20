@@ -5,11 +5,13 @@ import Services from "./pages/Services";
 import Store from "./pages/Store";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
-import Nav from "./components/Nav";
+import Nav from "./components/Nav/Nav";
+import NavContact from "./components/NavContact/NavContact";
 
 function App() {
   return (
     <>
+      <NavContact />
       <Nav />
 
       <h1>This is MotorBike...</h1>
