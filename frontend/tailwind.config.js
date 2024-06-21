@@ -83,5 +83,10 @@ export default {
       },
     },
   },
+  variants: {
+    extend: {
+      brightness: ["hover"],
+    },
+  },
   plugins: [],
 };

@@ -1,7 +1,7 @@
 const NavContact = () => {
   return (
     <>
-      <div className="flex w-full font-semibold lg:h-[50px] 3xl:h-[55px] 4xl:h-[60px] 5xl:h-[65px]">
+      <div className="flex w-full font-normal lg:h-[50px] 3xl:h-[55px] 4xl:h-[60px] 5xl:h-[65px]">
         <header className="flex w-full fixed items-center lg:h-[50px] 3xl:h-[55px] 4xl:h-[60px] 5xl:h-[65px] justify-between top-0 left-0 spa z-10 bg-charcoal-black-900 shadow-2xl">
           <ul className="flex justify-center items-center space-x-[19px] ml-8">
             <li className="flex items-center justify-start space-x-2">
