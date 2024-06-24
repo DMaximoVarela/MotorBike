@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -42,13 +43,9 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
-          <div className="ml-4 max-width-10 flex align-middle justify-center my-1 text-[white] hover:text-ivory-white-500 cursor-pointer">
+          <div className="ml-4 max-width-10 flex justify-center items-center my-1 text-[white] hover:text-ivory-white-500 cursor-pointer space-x-1">
             <span className="leading-3 text-[15px] font-light">Síguenos</span>
-            <img
-              src="/src/assets/uiw_linkedin.svg"
-              alt="linkedin icon"
-              className="w-4 h-4 mx-1"
-            />
+            <FaLinkedin className="text-[24px]" />
           </div>
         </div>
       </footer>

@@ -7,6 +7,10 @@ export default {
         "crimson-large": "0 0 6em rgba(202, 34, 34, 0.5)",
         "crimson-medium": "0 0 2.5em rgba(202, 34, 34, 0.5)",
         crimson: "0 0 1.5em rgba(202, 34, 34)",
+        "crimson-sm": "0 0 .5em rgba(202, 34, 34)",
+      },
+      textShadow: {
+        crimson: "0px 0px 24px rgba(202, 34, 34)",
       },
     },
     screens: {
@@ -94,5 +98,13 @@ export default {
       brightness: ["hover"],
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".text-shadow-crimson": {
+          textShadow: "0px 0px 24px rgba(202, 34, 34)",
+        },
+      });
+    },
+  ],
 };
