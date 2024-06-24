@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <>
       <div className="flex w-full font-sans font-semibold lg:h-[100px] 3xl:h-[110px] 4xl:h-[120px] 5xl:h-[130px]">
-        <header className="flex w-full fixed items-center lg:h-[100px] 3xl:h-[110px] 4xl:h-[120px] 5xl:h-[130px] justify-between top-0 left-0 spa z-10 bg-charcoal-black-950 shadow-2xl lg:mt-[50px] 3xl:mt-[55px] 4xl:mt-[60px] 5xl:mt-[65px]">
+        <header className="flex w-full fixed items-center lg:h-[100px] 3xl:h-[110px] 4xl:h-[120px] 5xl:h-[130px] justify-between top-0 left-0 z-10 bg-charcoal-black-950 shadow-2xl lg:mt-[50px] 3xl:mt-[55px] 4xl:mt-[60px] 5xl:mt-[65px]">
           <ul className="flex justify-center items-center space-x-[19px]">
             <li className="flex justify-start lg:h-[90px] 4xl:h-[106px] 5xl:h-[110px] lg:w-[90px] 4xl:w-[106px] 5xl:w-[110px] mx-6">
               <Link to={"/inicio"}>

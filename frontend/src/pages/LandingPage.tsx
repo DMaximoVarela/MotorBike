@@ -1,10 +1,10 @@
-import NeonButton from "../components/NeonButton/NeonButton";
+import ServicesSide from "../components/LandingPageComponents/ServicesSide";
 
 const LandingPage = () => {
   return (
     <>
-      <div className="flex justify-center items-center min-h-screen bg-black">
-        <NeonButton text="Solicitar Servicios" />
+      <div>
+        <ServicesSide />
       </div>
     </>
   );

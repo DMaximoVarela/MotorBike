@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      dropShadow: {
+        "crimson-large": "0 0 6em rgba(202, 34, 34, 0.5)",
+      },
+    },
     screens: {
       xsm: "320px",
       sm: "640px",
