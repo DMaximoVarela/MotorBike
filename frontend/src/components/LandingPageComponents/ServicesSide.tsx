@@ -16,7 +16,7 @@ const ServicesSide = () => {
         </li>
       </ul>
       <ul className="relative">
-        <li className="flex justify-end items-center w-[50vw] h-[80vh] bg-charcoal-black-500">
+        <li className="flex justify-end items-center w-[50vw] h-[80vh] rounded-md bg-charcoal-black-500">
           <img
             className="absolute w-[55vw] max-w-none obj-contain drop-shadow-crimson-large"
             src="/src/assets/Red Car.png"
