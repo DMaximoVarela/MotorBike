@@ -1,5 +1,6 @@
 import ServicesSide from "../components/LandingPageComponents/ServicesSide";
 import StoreSide from "../components/LandingPageComponents/StoreSide";
+import About from "../components/LandingPageComponents/About";
 
 const LandingPage = () => {
   return (
@@ -10,6 +11,8 @@ const LandingPage = () => {
         <br />
         <StoreSide />
         <br />
+        <br />
+        <About />
         <br />
       </div>
     </>

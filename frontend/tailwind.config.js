@@ -5,6 +5,8 @@ export default {
     extend: {
       dropShadow: {
         "crimson-large": "0 0 6em rgba(202, 34, 34, 0.5)",
+        "crimson-medium": "0 0 2.5em rgba(202, 34, 34, 0.5)",
+        crimson: "0 0 1.5em rgba(202, 34, 34)",
       },
     },
     screens: {
