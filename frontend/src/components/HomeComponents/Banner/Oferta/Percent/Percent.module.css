@@ -1,0 +1,10 @@
+.red {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: solid 1px white;
+  border-radius: 1px;
+  width: 14px;
+  height: 14px;
+}

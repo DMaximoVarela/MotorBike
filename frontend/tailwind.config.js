@@ -104,6 +104,9 @@ export default {
         ".text-shadow-crimson": {
           textShadow: "0px 0px 24px rgba(202, 34, 34)",
         },
+        ".text-shadow-black": {
+          textShadow: "0px 0px 16px rgba(0, 0, 0, 0.5)",
+        },
       });
     },
   ],
