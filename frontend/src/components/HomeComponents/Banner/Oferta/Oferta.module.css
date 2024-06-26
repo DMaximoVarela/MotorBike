@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   padding: 2px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 18px;
 }
 
 .blue {
@@ -19,7 +19,7 @@
   justify-content: center;
   align-items: center;
   padding: 2px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 18px;
 }
 
 .yellow {
@@ -31,7 +31,7 @@
   justify-content: center;
   align-items: center;
   padding: 2px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 18px;
 }
 
 @media (min-width: 1536px) {

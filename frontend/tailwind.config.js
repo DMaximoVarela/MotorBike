@@ -9,9 +9,6 @@ export default {
         crimson: "0 0 1.5em rgba(202, 34, 34)",
         "crimson-sm": "0 0 .5em rgba(202, 34, 34)",
       },
-      textShadow: {
-        crimson: "0px 0px 24px rgba(202, 34, 34)",
-      },
     },
     screens: {
       xsm: "320px",
@@ -102,7 +99,7 @@ export default {
     function ({ addUtilities }) {
       addUtilities({
         ".text-shadow-crimson": {
-          textShadow: "0px 0px 24px rgba(202, 34, 34)",
+          textShadow: "0px 0px 16px rgba(202, 34, 34)",
         },
         ".text-shadow-black": {
           textShadow: "0px 0px 16px rgba(0, 0, 0, 0.5)",
