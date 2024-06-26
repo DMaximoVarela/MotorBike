@@ -1,10 +1,29 @@
 .red {
+  width: 16px;
+  height: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: transparent;
-  border: solid 1px white;
-  border-radius: 1px;
-  width: 14px;
-  height: 14px;
+  background: #ca2222;
+  border-radius: 2px;
+}
+
+.blue {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #162e73;
+  border-radius: 2px;
+}
+
+.yellow {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9af00;
+  border-radius: 2px;
 }

@@ -6,8 +6,8 @@ interface Fondo {
 
 const Percent: React.FC<Fondo> = ({ fondo }) => {
   return (
-    <div className="w-[16px] h-[16px] flex justify-center items-center bg-crimson-red-500 rounded-[2px]">
-      <div className={style[fondo]}>
+    <div className={style[fondo]}>
+      <div className="w-[14px] h-[14px] flex justify-center items-center bg-[transparent] border-[1px] border-[white] rounded-[1xpx]">
         <span className="text-[white] text-[12px] font-semibold">%</span>
       </div>
     </div>
