@@ -8,6 +8,7 @@ export default {
         "crimson-medium": "0 0 2.5em rgba(202, 34, 34, 0.5)",
         crimson: "0 0 1.5em rgba(202, 34, 34)",
         "crimson-sm": "0 0 .5em rgba(202, 34, 34)",
+        "crimson-light": "0 0 .2em rgba(202, 34, 34)",
       },
     },
     screens: {
