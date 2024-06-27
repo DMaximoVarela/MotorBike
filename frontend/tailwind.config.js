@@ -9,6 +9,7 @@ export default {
         crimson: "0 0 1.5em rgba(202, 34, 34)",
         "crimson-sm": "0 0 .5em rgba(202, 34, 34)",
         "crimson-light": "0 0 .2em rgba(202, 34, 34)",
+        "indigo-blue-light": "0 0 .2em #1F3C88",
       },
     },
     screens: {

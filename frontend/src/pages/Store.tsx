@@ -13,6 +13,7 @@ const Store = () => {
         cantReseñas={12}
         precio={5000}
         descuento={false}
+        fondo={"red"}
       />
     </div>
   );
