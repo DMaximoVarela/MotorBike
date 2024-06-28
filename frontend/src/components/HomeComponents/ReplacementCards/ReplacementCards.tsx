@@ -35,7 +35,7 @@ const PrevArrow = ({ onClick, currentSlide }) => {
 
 const ReplacementCards = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 6,
@@ -87,7 +87,7 @@ const ReplacementCards = () => {
           ))}
         </Slider>
       </div>
-      <hr className="my-4 border-ivory-white-800" /> {/* Línea divisora */}
+      <hr className="my-4 border-ivory-white-800" />
       <div className="relative">
         <Slider {...settings}>
           {secondSet.map((replacement, index) => (
