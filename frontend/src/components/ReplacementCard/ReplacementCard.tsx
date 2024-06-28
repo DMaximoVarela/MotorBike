@@ -74,11 +74,14 @@ const ReplacementCard: React.FC<CardProps> = ({
         className={classNames(
           "absolute w-[160px] 2xl:w-[200px] 4xl:w-[240px] h-[180px] 2xl:h-[200px] 4xl:h-[220px] top-0 left-0 rounded-t-[8px]",
           {
-            "bg-crimson-red-600": isRed,
-            "bg-indigo-blue-700": isBlue,
+            "bg-crimson-red-300": isRed,
+            "bg-indigo-blue-500": isBlue,
           }
         )}
       >
+        <div className="absolute top-0 left-0 w-[100%] h-[100%] bg-[#0000004d]">
+          {/**OVERLAY */}
+        </div>
         <img
           className="w-full h-full object-contain drop-shadow-black"
           src={imageUrl}
