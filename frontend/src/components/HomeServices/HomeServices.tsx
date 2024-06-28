@@ -1,4 +1,4 @@
-import CardService from "../CardService1/CardService";
+import ServicesCards from "../HomeComponents/ServicesCards/ServicesCards";
 
 const HomeServices = () => {
   return (
@@ -7,7 +7,7 @@ const HomeServices = () => {
         Servicios Principales
       </h2>
       <br />
-      <CardService id={1} name="Service" fondo="red" />
+      <ServicesCards />
     </div>
   );
 };

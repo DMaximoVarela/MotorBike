@@ -5,12 +5,14 @@ import HomeServices from "../components/HomeServices/HomeServices";
 
 const Home = () => {
   return (
-    <div className="mx-2 my-1">
-      <Breadcrumb />
-      <br />
-      <Banner />
-      <br />
-      <HomeStore />
+    <div className="mx-0 my-1">
+      <div className="mx-2">
+        <Breadcrumb />
+        <br />
+        <Banner />
+        <br />
+        <HomeStore />
+      </div>
       <br />
       <HomeServices />
       <br />
