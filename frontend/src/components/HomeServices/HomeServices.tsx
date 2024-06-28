@@ -7,7 +7,7 @@ const HomeServices = () => {
         Servicios Principales
       </h2>
       <br />
-      <CardService />
+      <CardService id={1} name="Service" fondo="red" />
     </div>
   );
 };
