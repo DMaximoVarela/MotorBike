@@ -13,7 +13,7 @@ const CardService: React.FC<InfoService> = ({ id, name, fondo }) => {
   return (
     <div
       className={classNames(
-        "relative w-[50vw] h-[360px] bg-crimson-red-300 flex justify-evenly items-center space-x-0 m-0",
+        "relative w-[50vw] h-[360px] 5xl:h-[400px] bg-crimson-red-300 flex justify-evenly items-center space-x-0 m-0",
         {
           "bg-crimson-red-300": isRed,
           "bg-indigo-blue-500": isBlue,
@@ -24,11 +24,11 @@ const CardService: React.FC<InfoService> = ({ id, name, fondo }) => {
         {/**OVERLAY */}
       </div>
       <div className="relative w-[50%] h-full">
-        <ul className="font-semibold p-4">
-          <li className="text-[30px] xl:text-[32px] 2xl:text-[34px] 4xl:text-[36px] ">
+        <ul className="font-semibold p-4 5xl:p-6">
+          <li className="text-[30px] xl:text-[32px] 2xl:text-[34px] 4xl:text-[36px] 5xl:text-[38px]">
             {name}
           </li>
-          <li className="text-[14px] xl:text-[16px] 2xl:text-[18px] 4xl:text-[20px]">
+          <li className="text-[14px] xl:text-[16px] 2xl:text-[18px] 4xl:text-[20px] 5xl:text-[24px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
             vel turpis velit. Sed sit amet lectus a metus pretium rhoncus.
             Integer malesuada ex id quam hendrerit, in placerat leo aliquet. Sed

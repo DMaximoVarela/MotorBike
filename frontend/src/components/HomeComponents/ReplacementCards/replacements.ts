@@ -107,7 +107,7 @@ const replacements = [
     cantReseñas: 20,
     precio: 4500,
     descuento: false,
-    fondo: "red",
+    fondo: "blue",
   },
   {
     name: "Limpiaparabrisas",
@@ -117,7 +117,7 @@ const replacements = [
     cantReseñas: 10,
     precio: 2800,
     descuento: false,
-    fondo: "blue",
+    fondo: "red",
   },
   {
     name: "Termostato",
@@ -127,7 +127,7 @@ const replacements = [
     cantReseñas: 6,
     precio: 3600,
     descuento: false,
-    fondo: "red",
+    fondo: "blue",
   },
   {
     name: "Espejo Retrovisor",
@@ -137,7 +137,7 @@ const replacements = [
     cantReseñas: 18,
     precio: 2500,
     descuento: false,
-    fondo: "blue",
+    fondo: "red",
   },
   {
     name: "Alternador",
@@ -147,7 +147,7 @@ const replacements = [
     cantReseñas: 22,
     precio: 12000,
     descuento: false,
-    fondo: "red",
+    fondo: "blue",
   },
   {
     name: "Radiador",
@@ -157,7 +157,7 @@ const replacements = [
     cantReseñas: 18,
     precio: 8500,
     descuento: false,
-    fondo: "blue",
+    fondo: "red",
   },
   {
     name: "Bomba de Agua",
@@ -167,7 +167,7 @@ const replacements = [
     cantReseñas: 11,
     precio: 6800,
     descuento: false,
-    fondo: "red",
+    fondo: "blue",
   },
   {
     name: "Filtro de Habitáculo",
@@ -177,7 +177,7 @@ const replacements = [
     cantReseñas: 20,
     precio: 2600,
     descuento: false,
-    fondo: "blue",
+    fondo: "red",
   },
   {
     name: "Faros",
@@ -187,7 +187,7 @@ const replacements = [
     cantReseñas: 30,
     precio: 4500,
     descuento: false,
-    fondo: "red",
+    fondo: "blue",
   },
   {
     name: "Tapa de Distribuidor",
@@ -197,7 +197,7 @@ const replacements = [
     cantReseñas: 25,
     precio: 3100,
     descuento: false,
-    fondo: "blue",
+    fondo: "red",
   },
 ];
 
