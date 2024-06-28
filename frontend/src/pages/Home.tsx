@@ -4,7 +4,7 @@ import HomeStore from "../components/HomeComponents/HomeStore/HomeStore";
 
 const Home = () => {
   return (
-    <div className="mx-auto my-1">
+    <div className="mx-2 my-1">
       <Breadcrumb />
       <br />
       <Banner />

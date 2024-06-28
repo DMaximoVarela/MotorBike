@@ -16,26 +16,28 @@ const Breadcrumb = () => {
     paths.length === 1 && paths[0].toLowerCase() === "inicio";
 
   return (
-    <Breadcrumbs
-      className={style.font}
-      separator={
-        !isInicioPath && <IoIosArrowForward className="text-[white]" />
-      }
-      aria-label="breadcrumb"
-    >
-      <Link to="/inicio">
-        <IoMdHome className="text-[white] hover:text-ivory-white-500 text-[32px] pb-[2px]" />
-      </Link>
-      {paths.map((path, index) => (
-        <Link
-          key={index}
-          to={`/${paths.slice(0, index + 1).join("/")}`}
-          className="text-[white] hover:text-ivory-white-500"
-        >
-          {capitalize(decodeURIComponent(path.replace(/%20/g, " ")))}
+    <div className="flex justify-center items-center">
+      <Breadcrumbs
+        className={style.font}
+        separator={
+          !isInicioPath && <IoIosArrowForward className="text-[white]" />
+        }
+        aria-label="breadcrumb"
+      >
+        <Link to="/inicio">
+          <IoMdHome className="text-[white] hover:text-ivory-white-500 text-[32px] pb-[2px]" />
         </Link>
-      ))}
-    </Breadcrumbs>
+        {paths.map((path, index) => (
+          <Link
+            key={index}
+            to={`/${paths.slice(0, index + 1).join("/")}`}
+            className="text-[white] hover:text-ivory-white-500"
+          >
+            {capitalize(decodeURIComponent(path.replace(/%20/g, " ")))}
+          </Link>
+        ))}
+      </Breadcrumbs>
+    </div>
   );
 };
 
