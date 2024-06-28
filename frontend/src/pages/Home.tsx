@@ -1,6 +1,7 @@
 import Breadcrumb from "../components/BreadCrumb/BreadCrumb";
 import Banner from "../components/HomeComponents/Banner/Banner";
 import HomeStore from "../components/HomeComponents/HomeStore/HomeStore";
+import HomeServices from "../components/HomeServices/HomeServices";
 
 const Home = () => {
   return (
@@ -10,6 +11,8 @@ const Home = () => {
       <Banner />
       <br />
       <HomeStore />
+      <br />
+      <HomeServices />
       <br />
     </div>
   );
