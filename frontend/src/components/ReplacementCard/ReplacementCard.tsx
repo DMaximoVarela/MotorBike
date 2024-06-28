@@ -80,7 +80,7 @@ const ReplacementCard: React.FC<CardProps> = ({
         )}
       >
         <img
-          className="w-full h-full object-contain"
+          className="w-full h-full object-contain drop-shadow-black"
           src={imageUrl}
           alt="Replacement"
         />
