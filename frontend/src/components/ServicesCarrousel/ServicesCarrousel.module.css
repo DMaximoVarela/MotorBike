@@ -14,4 +14,5 @@
   @media (min-width: 1920px) {
     height: 600px;
   }
+  transition: background-image 0.5s ease-in-out;
 }
