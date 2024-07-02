@@ -1,5 +1,6 @@
 import Breadcrumb from "../components/BreadCrumb/BreadCrumb";
 import ServicesCarrousel from "../components/ServicesCarrousel/ServicesCarrousel";
+import CardService from "../components/CardService2/CardService";
 
 const Services = () => {
   return (
@@ -9,6 +10,8 @@ const Services = () => {
       <div>
         <ServicesCarrousel />
       </div>
+      <br />
+      <CardService />
       <br />
     </div>
   );

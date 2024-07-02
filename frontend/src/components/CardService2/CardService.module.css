@@ -1,0 +1,31 @@
+.more {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ca2222;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+.more:hover {
+  color: #a21919;
+}
+
+.more span {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.arrow {
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.more:hover .arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
